@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>D.P.M.C. LLC | UI/UX Design & IT Consulting</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Arial", sans-serif;
+      color: #222;
+      background-color: #ffffff;
+      scroll-behavior: smooth;
+      font-size: 20px;
+    }
+
+    header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      background-color: rgba(255, 255, 255, 0.95);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 60px;
+      z-index: 1000;
+      border-bottom: 1px solid #ddd;
+    }
+
+    header .logo {
+      font-family: "Times New Roman", serif;
+      font-weight: bold;
+      font-size: 28px;
+    }
+
+    nav a {
+      margin-left: 25px;
+      text-decoration: none;
+      color: #222;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #0077cc;
+    }
+
+    section {
+      padding: 100px 80px;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .hero {
+      background: #f8f9fa;
+      text-align: center;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .hero h1 {
+      font-family: "Times New Roman", serif;
+      font-size: 60px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 26px;
+      max-width: 900px;
+      margin: 0 auto 40px;
+      line-height: 1.4;
+    }
+
+    .hero img {
+      width: 100%;
+      max-width: 800px;
+      height: auto;
+      border-radius: 10px;
+      margin: 0 auto;
+    }
+
+    .about img {
+      width: 45%;
+      border-radius: 10px;
+      margin-left: 40px;
+    }
+
+    .about .text {
+      width: 50%;
+    }
+
+    .services, .advantages, .process {
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .service-items, .advantage-items, .process-steps {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 40px; /* уменьшен отступ сверху */
+      flex-wrap: wrap;
+    }
+
+    .service, .advantage, .step {
+      width: 30%;
+      min-width: 300px;
+      margin-bottom: 40px;
+    }
+
+    .contact {
+      background: #f0f3f6;
+      flex-direction: column;
+      text-align: center;
+      justify-content: center;
+    }
+
+    .contact form {
+      display: flex;
+      flex-direction: column;
+      max-width: 500px;
+      margin: 30px auto 0;
+    }
+
+    .contact input, .contact textarea {
+      padding: 15px;
+      margin-bottom: 15px;
+      font-size: 18px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .contact button {
+      background-color: #0077cc;
+      color: white;
+      padding: 15px;
+      border: none;
+      font-size: 20px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .contact button:hover {
+      background-color: #005fa3;
+    }
+
+    h2 {
+      font-size: 40px;
+      margin-bottom: 10px; /* уменьшено с 20px до 10px */
+      color: #111;
+    }
+
+    h3 {
+      font-size: 26px;
+      color: #0077cc;
+      margin-bottom: 10px; /* уменьшено с 15px до 10px */
+      margin-top: 5px; /* добавлено для плотности */
+    }
+
+    p {
+      line-height: 1.5;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      background-color: #222;
+      color: white;
+      font-size: 18px;
+    }
+
+    @media (max-width: 900px) {
+      section {
+        flex-direction: column;
+        padding: 80px 40px;
+      }
+      .about img, .about .text {
+        width: 100%;
+        margin: 0;
+      }
+      .service, .advantage, .step {
+        width: 80%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">D.P.M.C. LLC</div>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">Who We Are</a>
+      <a href="#services">Our Services</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <h1>D.P.M.C. LLC</h1>
+    <p>We design digital experiences that connect, empower, and elevate small businesses.  
+       Our team blends creativity and technical expertise to turn your business vision into seamless, user-focused digital solutions.</p>
+    <img src="https://plus.unsplash.com/premium_photo-1661400244754-850176ba82e3?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NjZ8fHVpJTJGdXglMjBEZXNpZ24lMkMlMjBUZWNobmljYWwlMjBhbmQlMjBJVCUyMGNvbnN1bHRpbmclMjBmb3IlMjBzbWFsbCUyMGJ1c2luZXNzfGVufDB8fDB8fHww&auto=format&fit=crop&q=60&w=600" alt="UI/UX Design and IT Consulting">
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about">
+    <div class="text">
+      <h2>Who We Are</h2>
+      <p>D.P.M.C. LLC is a US-based consulting and design company focused on helping small businesses thrive in the digital landscape.  
+         We specialize in UI/UX design, technical consulting, and IT strategy development tailored to each client’s unique needs.  
+         Our team combines creativity with analytical thinking to build meaningful interfaces and reliable systems.  
+         From startups to local enterprises, we support every stage of growth through data-driven and user-centric solutions.  
+         Our approach is practical, collaborative, and always aligned with real business results.</p>
+    </div>
+    <img src="https://plus.unsplash.com/premium_photo-1736892868741-35bc1ae89091?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDF8fHVpJTJGdXglMjBEZXNpZ24lMkMlMjBUZWNobmljYWwlMjBhbmQlMjBJVCUyMGNvbnN1bHRpbmclMjBmb3IlMjBzbWFsbCUyMGJ1c2luZXNzfGVufDB8fDB8fHww&auto=format&fit=crop&q=60&w=600" alt="About D.P.M.C. LLC">
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="services">
+    <h2>Our Expertise</h2>
+    <div class="service-items">
+      <div class="service">
+        <h3>UI/UX Design</h3>
+        <p>We craft intuitive digital interfaces that enhance engagement and improve usability.  
+           Every design is grounded in user research, ensuring your product feels natural and efficient for your audience.</p>
+      </div>
+      <div class="service">
+        <h3>Technical Consulting</h3>
+        <p>Our consultants help small businesses make informed technology decisions — from software architecture to system optimization — 
+           ensuring scalability, security, and cost efficiency.</p>
+      </div>
+      <div class="service">
+        <h3>IT Strategy for Growth</h3>
+        <p>We guide you in building a future-ready IT ecosystem.  
+           From cloud adoption to process automation, our strategies enable sustainable digital transformation and business expansion.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Advantages Section -->
+  <section id="advantages" class="advantages">
+    <h2>Why Work With Us</h2>
+    <div class="advantage-items">
+      <div class="advantage">
+        <h3>Tailored for Small Business</h3>
+        <p>We understand the unique challenges of small business environments and provide flexible, budget-conscious solutions without compromising quality.</p>
+      </div>
+      <div class="advantage">
+        <h3>Proven Technical Expertise</h3>
+        <p>Our specialists bring years of experience in UI/UX, IT systems, and digital consulting — ensuring technical excellence and reliability in every project.</p>
+      </div>
+      <div class="advantage">
+        <h3>Collaborative Partnership</h3>
+        <p>We believe in transparent communication and co-creation.  
+           You’re part of every decision, ensuring your vision drives the final outcome.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Process Section -->
+  <section id="process" class="process">
+    <h2>Our Process</h2>
+    <div class="process-steps">
+      <div class="step">
+        <h3>1. Discovery & Planning</h3>
+        <p>We begin by understanding your goals, target users, and current challenges.  
+           This helps us define a clear roadmap tailored to your objectives.</p>
+      </div>
+      <div class="step">
+        <h3>2. Design & Development</h3>
+        <p>Our team transforms strategy into tangible results — from user flows and wireframes to prototypes and tested final solutions.</p>
+      </div>
+      <div class="step">
+        <h3>3. Launch & Support</h3>
+        <p>We ensure a smooth launch, provide technical guidance, and offer ongoing support to keep your systems performing at their best.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <h2>Let’s Build Something Great</h2>
+    <p>Ready to take your digital experience to the next level?  
+       Reach out to us — we’re always excited to collaborate with ambitious businesses.  
+       Send us a message and let’s start shaping your success together.</p>
+
+    <p><strong>Email:</strong> info@dpmc-llc.agency</p>
+    <p><strong>Address:</strong> 7705 N 110TH Ln, Glendale, AZ 85307, USA</p>
+
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    © 2025 D.P.M.C. LLC — UI/UX Design & IT Consulting for Small Business
+  </footer>
+
+</body>
+</html>
